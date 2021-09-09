@@ -1,0 +1,28 @@
+// Notice: This is mere a list of parameters instead of a header file.
+// parameter list
+// gas type: nitrogen
+// M = 28
+
+// total amount of particles
+#define N 250
+
+// temperature is 20 Celsius
+#define T 293.15
+
+// a parameter for computing the probability of accepting the trial change when energy increases, 
+// related to temperature and mass of particle
+#define gamma 5.74386e-3
+
+// total time of trial change
+#define M 7500
+
+// max velocity of particles when the random initialization occurs
+#define Vmax 15
+
+// max new velocity of particles when a trial change occurs
+#define Smax 15
+
+// parameters for making chart in which the final state of system is shown
+#define Tmax 30
+#define f 1
+#define K 300
