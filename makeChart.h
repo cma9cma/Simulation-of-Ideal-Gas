@@ -1,4 +1,4 @@
-// make a line chart in which the final state of system is shown
+// make a line chart to show the final state of the system
 
 #include<iostream>
 using namespace std;
@@ -6,7 +6,7 @@ using namespace std;
 // total amount of particles
 #define N 250
 
-// parameters for making chart
+// the parameters for making chart
 #define f 1
 #define K 300
 
