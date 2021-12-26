@@ -37,7 +37,7 @@ public:
     // square velocity of particles
     double sqvel;
 
-    // make a initialization during which each particles are given a random velocity in [0, Vmax]
+    // make a initialization to impose each particles a random velocity in [0, Vmax]
     void velIni();
 
     // perform a trial change to change configuration of the system randomly
@@ -62,7 +62,7 @@ void particle::trialChange()
     double new_sqvel = (new_velx * new_velx) + (new_vely * new_vely) + (new_velz * new_velz);
     double delta_sqvel = new_sqvel - sqvel;
 
-    // if delta_sqvel <= 0, i.e. the energy decreases, accept the new configuration
+    // if delta_sqvel <= 0, i.e. the energy decreases, certainly accept the new configuration
     if (delta_sqvel <= 0)
     {
         sqvel = new_sqvel;
