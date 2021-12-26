@@ -4,10 +4,10 @@
 #include <counter.h>
 #include <makeChart.h>
 
-// total time of trial change
+// total times of trial change
 #define M 7500
 
-// parameter to make chart
+// the parameter to make chart
 #define Tmax 30
 
 int main()
@@ -28,7 +28,7 @@ int main()
 
     for (int i = 0; i < M; i++)
     {
-        // randomly choose a particle to suffer a trial change
+        // randomly choose a particle to perform a trial change
         int sel_part = w(e);
         p[sel_part].trialChange();
     }
@@ -47,7 +47,7 @@ int main()
         }
     }
 
-    // draw a line chart to show the final state of system after trial changes
+    // draw a histogram to show the final state of system after trial changes
     drawer.printFrame();
     for (int i = 0; i < f * Tmax; i++)
     {
