@@ -1,4 +1,4 @@
-// Notice: This is mere a list of parameters instead of a header file.
+// Notice: This is mere a list of parameters used in the program instead of a header file.
 // parameter list
 // gas type: nitrogen
 // M = 28
@@ -6,7 +6,7 @@
 // total amount of particles
 #define N 250
 
-// temperature is 20 Celsius
+// temperature is 20 Celsius (i.e. 293.15 Kelvin)
 #define T 293.15
 
 // a parameter for computing the probability of accepting the trial change when energy increases, 
@@ -22,7 +22,7 @@
 // max new velocity of particles when a trial change occurs
 #define Smax 15
 
-// parameters for making chart in which the final state of system is shown
+// parameters for making histogram to show the final state of the system
 #define Tmax 30
 #define f 1
 #define K 300
