@@ -1,4 +1,4 @@
-// make a line chart to show the final state of the system
+// make a histogram to show the final state of the system
 
 #include<iostream>
 using namespace std;
